@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cmp": "npx hygen component new"
   },
   "dependencies": {
+    "change-case": "^4.1.2",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"

@@ -6,7 +6,7 @@ const Home: NextPage = () => {
     <>
       <SEO />
       <div className="min-h-screen max-w-lg mx-auto grid place-content-center">
-        <div className="text-center">
+        <div className="text-center px-4">
           <h1 className="text-10vw/1.1 uppercase">ungfrú reykjavík</h1>
           <p className="text-28px/1">skvísaðu þig upp</p>
         </div>
