@@ -1,3 +1,9 @@
+import GoldenLogoSvg from './golden-logo'
+
 export default function Logo() {
-  return <div>Logo</div>
+  return (
+    <div>
+      <GoldenLogoSvg />
+    </div>
+  )
 }
