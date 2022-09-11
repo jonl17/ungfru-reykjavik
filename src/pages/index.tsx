@@ -1,14 +1,18 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import type { NextPage } from 'next'
+import { SEO } from '~/components'
 
 const Home: NextPage = () => {
   return (
-    <div className='p-4'>
-      <h1>ungfrú reykjavík</h1>
-    </div>
-  );
-};
+    <>
+      <SEO />
+      <div className="min-h-screen max-w-lg mx-auto grid place-content-center">
+        <div className="text-center">
+          <h1 className="text-10vw/1.1 uppercase">ungfrú reykjavík</h1>
+          <p className="text-28px/1">skvísaðu þig upp</p>
+        </div>
+      </div>
+    </>
+  )
+}
 
-export default Home;
+export default Home

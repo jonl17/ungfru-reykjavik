@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  src: url('/font/regular.woff');
+  font-family: 'edit-regular';
+}
+@font-face {
+  src: url('/font/italic.woff');
+  font-family: 'edit-italic';
+}
+
+@layer base {
+  html {
+    @apply font-edit-regular;
+  }
+}
