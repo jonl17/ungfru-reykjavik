@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { SEO, Logo } from '~/components'
+import MaskedTitle from '~/components/MaskedTitle'
 
 const Home: NextPage = () => {
   return (
@@ -9,10 +10,10 @@ const Home: NextPage = () => {
         <div className="absolute left-10 top-10">
           <Logo />
         </div>
-        <div className="text-center px-4">
-          <h1 className="text-10vw/1.1 uppercase">ungfrú reykjavík</h1>
-          <p className="text-28px/1">skvísaðu þig upp</p>
-        </div>
+        <MaskedTitle className="page-title-top-tweak-mobile md:page-title-top-tweak">
+          Ungfrú
+        </MaskedTitle>
+        <MaskedTitle>Reykjavík</MaskedTitle>
       </div>
     </>
   )
