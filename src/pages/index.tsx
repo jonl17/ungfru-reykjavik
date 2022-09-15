@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <div className="absolute left-10 top-10">
           <Logo />
         </div>
-        <div className="flex justify-between uppercase text-[89px] leading-[0.8] tracking-[8px]">
+        <div className="flex justify-between uppercase mx-auto md:mx-0 px-4 w-[355px] md:max-w-none md:w-auto text-[35px] md:text-[89px] leading-[0.8] tracking-[8px]">
           <h1>Hér</h1>
           <h1>Opnar</h1>
         </div>
@@ -28,7 +28,8 @@ const Home: NextPage = () => {
             Reykjavík
           </h1>
         </motion.div>
-        <div className="font-edit-italic text-[53px] rotate-[11.5deg] tracking-[16px]">
+
+        <div className="font-edit-italic mt-2 md:mt-0 pl-6 md:pl-0 text-[22px] md:text-[53px] rotate-[11.5deg] tracking-[8px] md:tracking-[16px]">
           <p>skál fyrir svísum</p>
         </div>
       </div>
