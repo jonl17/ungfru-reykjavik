@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
-import { useState } from 'react'
 import { SEO, Logo } from '~/components'
 import { motion } from 'framer-motion'
+import Marquee from 'react-fast-marquee'
 
 const Home: NextPage = () => {
   return (
@@ -28,11 +28,16 @@ const Home: NextPage = () => {
             Reykjavík
           </h1>
         </motion.div>
-
-        <div className="font-edit-italic mt-2 md:mt-0 pl-6 md:pl-0 text-[22px] md:text-[53px] rotate-[11.5deg] tracking-[8px] md:tracking-[16px]">
+      </div>
+      <Marquee
+        speed={65}
+        gradient={false}
+        className="rotate-[11.5deg] absolute bottom-56 md:bottom-44"
+      >
+        <div className="font-edit-italic mt-2 md:mt-0 pl-0 text-[22px] md:text-[53px] tracking-[8px] md:tracking-[16px]">
           <p>skál fyrir svísum</p>
         </div>
-      </div>
+      </Marquee>
     </>
   )
 }
