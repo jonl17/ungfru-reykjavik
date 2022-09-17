@@ -1,3 +1,5 @@
 export { default as SEO } from './SEO'
 export { default as Logo } from './Logo'
-export { default as MaskedTitle } from './MaskedTitle'
+export { default as GoldenMockupSvg } from './GoldenMockupSvg'
+export { default as MockupSvg } from './MockupSvg'
+export { default as SocialMediaLinks } from './SocialMediaLinks'

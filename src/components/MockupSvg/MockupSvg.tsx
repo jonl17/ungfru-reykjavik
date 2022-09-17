@@ -77,10 +77,14 @@ function MainTitle() {
   )
 }
 
-export default function MockupSvg() {
+type Props = {
+  className?: string
+}
+
+export default function MockupSvg({ className }: Props) {
   return (
     <svg
-      className="w-full md:h-[500px] lg:h-[650px]"
+      className={className}
       viewBox="0 0 622 634"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
