@@ -80,8 +80,7 @@ function MainTitle() {
 export default function MockupSvg() {
   return (
     <svg
-      width="100%"
-      height="100%"
+      className="w-full md:h-[500px] lg:h-[750px]"
       viewBox="0 0 622 634"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
