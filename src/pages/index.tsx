@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <div className="overflow-hidden ">
       <SEO />
       <div className="min-h-screen px-4 md:max-w-xl 2xl:max-w-3xl mx-auto grid place-content-center">
-        <div className="absolute left-5 top-5 md:left-10 md:top-10 h-20 w-20 md:h-28 md:w-28">
+        <div className="absolute left-5 top-5 md:left-10 md:top-10 h-20 w-20 md:h-24 md:w-24">
           <Logo />
         </div>
         <div className="w-full relative">
