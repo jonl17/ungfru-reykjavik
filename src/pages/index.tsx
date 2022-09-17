@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         favicon={favicon}
       />
       <div className="min-h-screen px-4 md:max-w-xl xl:max-w-3xl mx-auto grid items-center">
-        <div className="absolute left-5 top-5 md:left-10 md:top-10 h-20 w-20 md:h-24 md:w-24">
+        <div className="absolute left-5 top-5 md:left-10 md:top-10 h-12 w-12 md:h-16 md:w-16">
           <Logo />
         </div>
         <div className="w-full relative h-[400px] md:h-[500px] lg:h-[585px]">
