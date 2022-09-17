@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <div className="absolute left-5 top-5 md:left-10 md:top-10 h-20 w-20 md:h-24 md:w-24">
           <Logo />
         </div>
-        <div className="w-full relative h-[400px] md:h-[500px] lg:h-[625px]">
+        <div className="w-full relative h-[400px] md:h-[500px] lg:h-[585px]">
           <div className="w-full h-full">
             <motion.div
               className="absolute top-0 h-full w-full"
