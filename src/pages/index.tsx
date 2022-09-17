@@ -8,8 +8,11 @@ const instagramUrl = 'https://www.instagram.com/ungfrureykjavik/'
 const Home: NextPage = () => {
   return (
     <div className="overflow-hidden ">
-      <SEO />
-      <div className="min-h-screen px-4 md:max-w-xl 2xl:max-w-3xl mx-auto grid place-content-center">
+      <SEO
+        title="Ungfrú Reykjavík"
+        description="Ungfrú Reykjavik er hárgreiðslu- og snyrtistofa sem tengir saman hár, fegurð og félagslega upplifun. Skál fyrir skvísum!"
+      />
+      <div className="min-h-screen px-4 md:max-w-xl xl:max-w-3xl mx-auto grid place-content-center">
         <div className="absolute left-5 top-5 md:left-10 md:top-10 h-20 w-20 md:h-24 md:w-24">
           <Logo />
         </div>

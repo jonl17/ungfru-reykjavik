@@ -1,9 +1,15 @@
 import Head from 'next/head'
 
-export default function SEO() {
+type Props = {
+  title: string
+  description: string
+  image: string
+}
+
+export default function SEO({ title, description, image }: Props) {
   return (
     <Head>
-      <title>Ungfrú Reykjavík</title>
+      <title>{title}</title>
     </Head>
   )
 }
