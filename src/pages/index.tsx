@@ -15,9 +15,14 @@ import {
   instagramUrl,
 } from '~/mock'
 
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useState } from 'react'
 
 const Home: NextPage = () => {
+  const [active, setActive] = useState(false)
+
+  console.log(active)
+
   return (
     <div className="overflow-hidden ">
       <SEO
@@ -31,25 +36,29 @@ const Home: NextPage = () => {
           <Logo />
         </div>
         <div className="w-full relative h-[400px] md:h-[500px]">
-          <div className="w-full h-full">
-            <motion.div
-              className="absolute top-0 h-full w-full"
-              initial={{ opacity: 1 }}
-              animate={{ opacity: 0 }}
-              transition={{ delay: 0.5, duration: 1 }}
-            >
+          <div className="absolute top-0 h-full w-full">
+            <motion.div className="w-full h-full relative">
               <MockupSvg className="h-full w-full" />
             </motion.div>
-            <motion.div
-              className="absolute top-0 h-full w-full"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-            >
-              <GoldenMockupSvg className="h-full w-full" />
-            </motion.div>
+            <AnimatePresence>
+              {active && (
+                <motion.div
+                  className="absolute top-0 h-full w-full"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <GoldenMockupSvg className="h-full w-full" />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
           <SocialMediaLinks platforms={[facebookUrl, instagramUrl]} />
+          <div
+            onMouseEnter={() => setActive(true)}
+            onMouseLeave={() => setActive(false)}
+            className="relative top-16 md:top-20 h-36 md:h-40 max-w-lg mx-auto w-full z-50"
+          ></div>
         </div>
       </div>
     </div>
