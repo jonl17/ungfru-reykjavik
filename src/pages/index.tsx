@@ -36,7 +36,7 @@ const Home: NextPage = () => {
               className="absolute top-0 h-full w-full"
               initial={{ opacity: 1 }}
               animate={{ opacity: 0 }}
-              transition={{ delay: 0.2, duration: 5 }}
+              transition={{ delay: 0.5, duration: 1 }}
             >
               <MockupSvg className="h-full w-full" />
             </motion.div>
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
               className="absolute top-0 h-full w-full"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.2, duration: 5 }}
+              transition={{ delay: 0.5, duration: 1 }}
             >
               <GoldenMockupSvg className="h-full w-full" />
             </motion.div>
