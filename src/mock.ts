@@ -3,6 +3,6 @@ export const facebookUrl =
 export const instagramUrl = 'https://www.instagram.com/ungfrureykjavik/'
 export const title = 'Ungfrú Reykjavík'
 export const description =
-  'Ungfrú Reykjavik er hárgreiðslu- og snyrtistofa sem tengir saman hár, fegurð og félagslega upplifun. Skál fyrir skvísum!'
+  'Ungfrú Reykjavík er hárgreiðslu- og snyrtistofa sem tengir saman hár, fegurð og félagslega upplifun. Skál fyrir skvísum!'
 export const image = '/seo-image.png'
 export const favicon = '/favicon.png'
