@@ -1,3 +1,3 @@
 export default function FlyingDutchman() {
-  return <div className="border h-24">FlyingDutchman</div>
+  return <div className="border h-36">FlyingDutchman</div>
 }

@@ -36,15 +36,15 @@ const Home: NextPage = () => {
       <div className="min-h-screen px-4 md:max-w-xl xl:max-w-3xl mx-auto grid items-center">
         <div className="w-full relative h-full">
           <div className="h-full w-full max-w-lg mx-auto flex flex-col justify-between">
-            <div>
+            <div className="grid h-full place-content-center mb-5">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="w-full h-full relative mb-4"
+                className="w-full max-w-md h-full relative mb-4"
               >
                 <LogoTitle className="w-full h-full" />
               </motion.div>
-              {/* <FlyingDutchman /> */}
+              <FlyingDutchman />
               <a href="#">
                 <Button>Bóka tíma</Button>
               </a>
