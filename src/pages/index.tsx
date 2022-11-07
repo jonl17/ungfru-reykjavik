@@ -5,6 +5,8 @@ import {
   GoldenMockupSvg,
   MockupSvg,
   SocialMediaLinks,
+  LogoTitle,
+  Button,
 } from '~/components'
 import {
   title,
@@ -21,8 +23,6 @@ import { useState } from 'react'
 const Home: NextPage = () => {
   const [active, setActive] = useState(false)
 
-  console.log(active)
-
   return (
     <div className="overflow-hidden ">
       <SEO
@@ -37,28 +37,17 @@ const Home: NextPage = () => {
         </div>
         <div className="w-full relative h-[400px] md:h-[500px]">
           <div className="absolute top-0 h-full w-full">
-            <motion.div className="w-full h-full relative">
-              <MockupSvg className="h-full w-full" />
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="w-full h-full relative"
+            >
+              <LogoTitle className="w-full h-full" />
             </motion.div>
-            <AnimatePresence>
-              {active && (
-                <motion.div
-                  className="absolute top-0 h-full w-full"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                >
-                  <GoldenMockupSvg className="h-full w-full" />
-                </motion.div>
-              )}
-            </AnimatePresence>
+            <a>
+              <Button>Bóka tíma</Button>
+            </a>
           </div>
-          <SocialMediaLinks platforms={[facebookUrl, instagramUrl]} />
-          <div
-            onMouseEnter={() => setActive(true)}
-            onMouseLeave={() => setActive(false)}
-            className="relative top-16 md:top-20 h-36 md:h-40 max-w-lg mx-auto w-full z-50"
-          ></div>
         </div>
       </div>
     </div>
