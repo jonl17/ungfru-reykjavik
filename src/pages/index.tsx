@@ -7,6 +7,8 @@ import {
   SocialMediaLinks,
   LogoTitle,
   Button,
+  Contact,
+  FlyingDutchman,
 } from '~/components'
 import {
   title,
@@ -17,7 +19,7 @@ import {
   instagramUrl,
 } from '~/mock'
 
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useState } from 'react'
 
 const Home: NextPage = () => {
@@ -32,21 +34,22 @@ const Home: NextPage = () => {
         favicon={favicon}
       />
       <div className="min-h-screen px-4 md:max-w-xl xl:max-w-3xl mx-auto grid items-center">
-        <div className="absolute left-5 top-5 md:left-10 md:top-10 h-12 w-12 md:h-16 md:w-16">
-          <Logo />
-        </div>
-        <div className="w-full relative h-[400px] md:h-[500px]">
-          <div className="absolute top-0 h-full w-full">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="w-full h-full relative"
-            >
-              <LogoTitle className="w-full h-full" />
-            </motion.div>
-            <a>
-              <Button>Bóka tíma</Button>
-            </a>
+        <div className="w-full relative h-full">
+          <div className="h-full w-full max-w-lg mx-auto flex flex-col justify-between">
+            <div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="w-full h-full relative mb-4"
+              >
+                <LogoTitle className="w-full h-full" />
+              </motion.div>
+              {/* <FlyingDutchman /> */}
+              <a href="#">
+                <Button>Bóka tíma</Button>
+              </a>
+            </div>
+            <Contact />
           </div>
         </div>
       </div>
