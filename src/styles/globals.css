@@ -5,10 +5,12 @@
 @font-face {
   src: url('/font/regular.woff');
   font-family: 'edit-regular';
+  font-weight: regular;
 }
 @font-face {
   src: url('/font/italic.woff');
   font-family: 'edit-italic';
+  font-weight: regular;
 }
 
 @layer base {
