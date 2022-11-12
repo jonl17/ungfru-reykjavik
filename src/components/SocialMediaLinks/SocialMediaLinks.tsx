@@ -1,5 +1,3 @@
-import { platform } from 'os'
-
 type Props = {
   platforms: string[]
 }

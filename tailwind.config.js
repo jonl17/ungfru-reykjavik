@@ -19,8 +19,20 @@ module.exports = {
       '120px/1.6': ['120px', '1.6'],
       '60px/1.5': ['60px', '1.5'],
       '28px/1': ['28px', '1'],
+      '18px/23': ['18px', '23px'],
+      '15px/1': ['15px', '1'],
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        flyingDutchman: {
+          '0%': { transform: 'rotate(11.5deg) translateX(-100%)' },
+          '100%': { transform: 'rotate(11.5deg) translateX(110%)' },
+        },
+      },
+      animation: {
+        'flying-dutchman': 'flyingDutchman 8s linear forwards infinite',
+      },
+    },
   },
   plugins: [
     plugin(function ({ addUtilities }) {
