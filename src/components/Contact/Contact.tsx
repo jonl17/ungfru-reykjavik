@@ -22,7 +22,7 @@ export default function Contact() {
   ]
 
   return (
-    <div className="h-16 mb-5 flex flex-col justify-between">
+    <div className="h-16 mb-10 flex flex-col justify-between">
       <div className="flex justify-between">
         {address.map((item, key) => (
           <p className="uppercase" key={key}>
@@ -33,7 +33,7 @@ export default function Contact() {
       <div className="flex justify-between">
         {contact.map((item, key) => (
           <a
-            className={cn('tracking-[0.18rem]', {
+            className={cn('md:tracking-[0.18rem]', {
               'font-edit-italic': key === 0,
             })}
             key={key}
@@ -43,9 +43,15 @@ export default function Contact() {
           </a>
         ))}
       </div>
-      <div className="flex justify-between -mr-3">
+      <div className="flex justify-between">
         {socialMedia.map((item, key) => (
-          <a className="tracking-[0.93rem] italic" key={key} href={item.href}>
+          <a
+            className={cn('tracking-[0.5rem] md:tracking-[0.93rem] italic', {
+              '-mr-3': key === socialMedia.length - 1,
+            })}
+            key={key}
+            href={item.href}
+          >
             {item.label}
           </a>
         ))}

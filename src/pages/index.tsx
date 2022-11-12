@@ -44,7 +44,7 @@ const Home: NextPage = () => {
               >
                 <LogoTitle className="w-full h-full" />
               </motion.div>
-              <FlyingDutchman />
+              <FlyingDutchman text="skál fyrir skvísum" />
               <a href="#">
                 <Button>Bóka tíma</Button>
               </a>
