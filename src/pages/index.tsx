@@ -17,6 +17,7 @@ import {
   favicon,
   facebookUrl,
   instagramUrl,
+  noonaUrl,
 } from '~/mock'
 
 import { motion } from 'framer-motion'
@@ -45,7 +46,7 @@ const Home: NextPage = () => {
                 <LogoTitle className="w-full h-full" />
               </motion.div>
               <FlyingDutchman text="skál fyrir skvísum" />
-              <a href="#">
+              <a target="_blank" rel="noreferrer" href={noonaUrl}>
                 <Button>Bóka tíma</Button>
               </a>
             </div>

@@ -1,5 +1,5 @@
 import cn from 'classnames'
-import { facebookUrl, instagramUrl } from '~/mock'
+import { facebookUrl, googleMapsTargetUrl, instagramUrl } from '~/mock'
 
 export default function Contact() {
   const address = ['Kolagata', 'Hafnartorg', '101 Reykjavík']
@@ -22,14 +22,19 @@ export default function Contact() {
   ]
 
   return (
-    <div className="h-16 mb-10 flex flex-col justify-between">
-      <div className="flex justify-between">
+    <div className="h-16 mb-10 flex flex-col justify-between text-15px/1 md:text-18px/23">
+      <a
+        href={googleMapsTargetUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="flex justify-between"
+      >
         {address.map((item, key) => (
           <p className="uppercase" key={key}>
             {item}
           </p>
         ))}
-      </div>
+      </a>
       <div className="flex justify-between">
         {contact.map((item, key) => (
           <a
