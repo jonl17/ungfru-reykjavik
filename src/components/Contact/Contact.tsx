@@ -22,7 +22,7 @@ export default function Contact() {
   ]
 
   return (
-    <div className="h-16 mb-10 flex gap-5 md:gap-3 flex-col justify-between text-15px/1 md:text-18px/23">
+    <div className="h-16 mb-24 flex gap-5 md:gap-3 flex-col justify-between text-15px/1 md:text-18px/23">
       <a
         href={googleMapsTargetUrl}
         target="_blank"

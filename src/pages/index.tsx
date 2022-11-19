@@ -43,7 +43,7 @@ const Home: NextPage = () => {
                 animate={{ opacity: 1 }}
                 className="w-full h-full relative mb-4"
               >
-                <LogoTitle className="w-full h-full" />
+                <LogoTitle className="w-3/4 mx-auto md:w-full h-full" />
               </motion.div>
               <FlyingDutchman text="skál fyrir skvísum" />
               <a target="_blank" rel="noreferrer" href={noonaUrl}>
